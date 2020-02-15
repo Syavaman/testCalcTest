@@ -1,13 +1,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
 <suite name="Calc" >
-    <parameter name="name"  value="Svyat"/>
     <parameter name="pInt1" value="5" />
     <parameter name="pInt2" value="5" />
 
     <test name="Calc" parallel="methods" thread-count="2" >
         <classes>
-            <class name="TestCalc" />
+            <class name="TestSubtraction" />
+            <class name="TestAddition" />
+            <class name="TestMultiplication" />
+            <class name="TestDivision" />
         </classes>
     </test>
 </suite>
